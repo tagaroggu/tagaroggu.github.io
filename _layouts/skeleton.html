@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <title>{{ page.title }} -- Tagaroggu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Twitter-->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tagaroggu" />
+        <meta name="twitter:title" content="{{ page.title }} -- Tagaroggu" />
+        <!--OGP-->
+        <meta property="og:title" content="{{ page.title }} -- Tagaroggu" />
+        <!--<meta property="og:image" content="" />-->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tagaroggu.github.io/" />
     </head>
     <body>
         {{ content }}
