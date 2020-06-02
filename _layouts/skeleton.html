@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-    <head>
-        <title>{{ page.title }} -- Tagaroggu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--I'm here, I'm there, where ever,,,-->
-        <!--Twitter-->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content="https://tagaroggu.github.io/Tagaroggu.png" />
-        <meta name="twitter:site" content="@tagaroggu" />
-        <meta name="twitter:title" content="{{ page.title }} -- Tagaroggu" />
-        <!--OGP-->
-        <meta property="og:title" content="{{ page.title }} -- Tagaroggu" />
-        <meta property="og:image" content="https://tagaroggu.github.io/Tagaroggu.png" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tagaroggu.github.io/" />
-    </head>
-    <body>
-        {{ content }}
-    </body>
+	<head>
+		<title>{{ page.title }}</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Twitter Cards-->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content="https://tagaroggu.github.io/Tagaroggu.png">
+		<meta name="twitter:site" content="@Tagaroggu">
+		<meta name="twitter:title" content="{{ page.title }}">
+		
+		<!--OGP-->
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:image" content="https://tagaroggu.github.io/Tagaroggu.png">
+		<meta property="op:type" content="website">
+		<meta property="og:url" content="https://tagaroggu.github.io">
+		
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		
+		<!--JS-->
+		<script></script>
+	</head>
+	<body class="container" style="margin-top: 5%; font-family: 'Ubuntu', sans-serif;">
+		{{ content }}
+	</body>
 </html>
