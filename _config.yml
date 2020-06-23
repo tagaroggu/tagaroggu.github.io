@@ -1,6 +1,13 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+author:
+  twitter: tagaroggu
+url: "https://tagaroggu.github.io"
 defaults:
-    - scope:
-        path: ""
-        type: "posts"
-    values:
-        layout: "post"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    value:
+      layouts: "post"
