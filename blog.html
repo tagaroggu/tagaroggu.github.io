@@ -1,0 +1,7 @@
+---
+layout: skeleton
+---
+<h1 class="u-full-width" style="text-align: center">Blog</h1>
+{% for post in site.posts %}
+<a class="u-full-width button" href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
