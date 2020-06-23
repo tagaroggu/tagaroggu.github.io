@@ -2,10 +2,12 @@
 layout: skeleton
 title: Tagaroggu
 ---
+{% include nav.html %}
 <h1 class="u-full-width" style="text-align: center">Tagaroggu</h1>
 <h2 class="u-full-width" style="text-align: center">Coder, Crocheter</h2>
+<h4 id="projects">Projects</h4>
 <div class="row">
-	<!--<a class="button four columns" href="/blog">Blog</a>-->
-	<a class="button twelve columns" href="https://new-therian-safehaven.github.io/">NTSH</a>
-	<!--<a class="button four columns" href="/other">Other</a>-->
+{% for project in site.data.projects %}	
+	<a class="button twelve columns" href="project.link">project.name</a>
+{% endfor %}
 </div>
