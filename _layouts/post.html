@@ -1,7 +1,7 @@
 ---
 layout: skeleton
 ---
-<h3>{{ page.title }}</h3>
-<h5>{{ page.date | date_to_string }}</h5>
+<h3 class="u-full-width">{{ page.title }}</h3>
+<h5 class="u-full-width">{{ page.date | date_to_string }}</h5>
 
-{{ content }}
+<span class="u-full-width">{{ content | markdownify}}
