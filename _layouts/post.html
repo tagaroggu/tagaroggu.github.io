@@ -1,7 +1,8 @@
 ---
 layout: skeleton
 ---
-<h3 class="u-full-width">{{ page.title }}</h3>
-<h5 class="u-full-width">{{ page.date | date_to_string }}</h5>
+<h1 class="u-full-width">{{ page.title }}</h1>
+<h2 class="u-full-width">{{ page.date | date_to_string }}</h2>
+<a href="javascript:window.history.back()" class="button">&lt; Go back</a>
 
-<span class="u-full-width">{{ content | markdownify}}
+<span class="u-full-width">{{ content | markdownify }}
