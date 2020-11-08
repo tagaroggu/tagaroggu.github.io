@@ -1,0 +1,7 @@
+:root {
+	--mdc-theme-primary: #AA6666;
+	--mdc-theme-secondary: #ff8888;
+}
+body {
+	margin: 0;
+}

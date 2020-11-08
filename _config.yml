@@ -1,13 +1,11 @@
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+title: Tagaroggu
+email: taga@myself.com
+twitter_username: tagaroggu
+github_username:  tagaroggu
 author:
   twitter: tagaroggu
 url: "https://tagaroggu.github.io"
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    value:
-      layouts: "post"
+base_url: "/"

@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html>
 	<head>
-		<title>{{ page.title }}</title>
+		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#FFAAAA">
-		<meta name="monetization" content=$pay.stronghold.co/1a1aa82f3d4c9f04b02a8d268dde20d9410">
-		{% feed_meta %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<meta name="theme-color" content="#AA6666" />
 		
-		<!--Twitter Cards-->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:image" content="https://tagaroggu.github.io/assets/images/Tagaroggu.png">
-		<meta name="twitter:site" content="@Tagaroggu">
-		<meta name="twitter:title" content="{{ page.title }}">
-		
-		<!--OGP-->
-		<meta property="og:title" content="{{ page.title }}">
-		<meta property="og:image" content="https://tagaroggu.github.io/assets/images/Tagaroggu.png">
-		<meta property="op:type" content="website">
-		<meta property="og:url" content="https://tagaroggu.github.io">
-		
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/skeleton.css">
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+		<link rel="stylesheet" href="/assets/css/style.css" />
 	</head>
-	<body class="container" style="margin-top: 5%; font-family: 'Ubuntu', sans-serif;">
+	<body>
+		{% include header.html %}
+		
 		{{ content }}
+		
+		<script>mdc.autoInit()</script>
 	</body>
 </html>
