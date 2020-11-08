@@ -10,9 +10,10 @@
 		<meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
 		
 		<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-		<meta property="og:url" content="{{ page.url | append: site.base_url | append: site.url }}" />
-		<meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ "/assets/images/tagaroggu.png" | append: site.base_url | append: site.url }}{% endif %}" />
+		<meta property="og:url" content="{{ page.url | absolute_url }}" />
+		<meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ "/assets/images/tagaroggu.png" | absolute_url }}{% endif %}" />
 		<meta property="og:type" content="website" />	
+		<meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
 		
 		<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
