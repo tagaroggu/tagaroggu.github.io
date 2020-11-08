@@ -3,7 +3,7 @@ layout: skeleton
 ---
 <h1 class="mdc-typography--headline4" style="padding-left: 16px">{{ page.title }}</h1>
 <h2 class="mdc-typography--subtitle1" style="padding-left: 16px">{{ page.date | date_to_string }}</h2>
-<a class="mdc-icon-button material-icons" title="Back" aria-label="Back" href="javascript:window.location.back()" style="padding-left: 16px">arrow_back</a>
-<span style="padding-left: 16px">{{ content | markdownify }}</span>
-<h3 class="mdc-typography--headline6" style="padding-left: 16px">Comments:</h3>
+<!--<a class="mdc-icon-button material-icons" title="Back" aria-label="Back" href="javascript:window.location.back()" style="padding-left: 16px">arrow_back</a>-->
+<p style="padding-left: 16px">{{ content | markdownify }}</p>
+<!--<h3 class="mdc-typography--headline6" style="padding-left: 16px">Comments:</h3>-->
 <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="cXRNoIPl" data-limit="5" data-color="CC6666" data-dislikes="1" data-colorful="1"></script>
