@@ -13,7 +13,13 @@
 		<meta property="og:url" content="{{ page.url | absolute_url }}" />
 		<meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ "/assets/images/Tagaroggu.png" | absolute_url }}{% endif %}" />
 		<meta property="og:type" content="website" />	
-		<meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+		<meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
+		
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@tagaroggu" />
+		<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+		<meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
+		<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ "/assets/images/Tagaroggu.png" | absolute_url }}{% endif %}" />
 		
 		<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
