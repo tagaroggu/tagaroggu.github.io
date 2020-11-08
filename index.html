@@ -2,15 +2,26 @@
 layout: skeleton
 title: Tagaroggu
 ---
+<style>
+	#projects div div a {
+		text-decoration: none;
+		color: black;
+	}
+	#projects div div a#hover {
+		text-decoration: underline;
+	}
+</style>
 <section id="projects">
 	<h2 class="mdc-typography--headline4" style="padding-left: 16px">Projects:</h2>
 	<div class="mdc-layout-grid">
 		<div class="mdc-layout-grid__inner">
-			{% for project in site.data.projects %}	
-				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-card mdc-card--outlined" style="padding: 16px">
-					<h1 class="mdc-typography--headline4">{{ project.name }}</h1>
-					<h2 class="mdc-typography--subtitle1">{{ project.desc }}</h2>
-				</div>
+			{% for project in site.data.projects %}
+				<a href="{{ project.link }}">
+					<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-card mdc-card--outlined" style="padding: 16px">
+						<h1 class="mdc-typography--headline4">{{ project.name }}</h1>
+						<h2 class="mdc-typography--subtitle1">{{ project.desc }}</h2>
+					</div>
+				</a>
 			{% endfor %}
 		</div>
 	</div>
