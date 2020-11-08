@@ -3,11 +3,11 @@ layout: skeleton
 title: Tagaroggu
 ---
 <style>
-	#projects div div a {
+	#projects div div div a {
 		text-decoration: none;
 		color: black;
 	}
-	#projects div div a#hover {
+	#projects div div div a#hover {
 		text-decoration: underline;
 	}
 </style>
@@ -16,12 +16,12 @@ title: Tagaroggu
 	<div class="mdc-layout-grid">
 		<div class="mdc-layout-grid__inner">
 			{% for project in site.data.projects %}
-				<a href="{{ project.link }}">
-					<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-card mdc-card--outlined" style="padding: 16px">
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-card mdc-card--outlined" style="padding: 16px">
+					<a href="{{ project.link }}">
 						<h1 class="mdc-typography--headline4">{{ project.name }}</h1>
 						<h2 class="mdc-typography--subtitle1">{{ project.desc }}</h2>
-					</div>
-				</a>
+					</a>
+				</div>
 			{% endfor %}
 		</div>
 	</div>
