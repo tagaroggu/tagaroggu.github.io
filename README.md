@@ -1,2 +1,6 @@
 # tagaroggu.github.io
-Made with [Skeleton](https://github.com/dhg/Skeleton)
+**Made with:**
+- Jekyll
+- Material Design Components Web
+- Github Pages
+<!--- Love-->
