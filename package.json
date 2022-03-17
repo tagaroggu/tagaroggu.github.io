@@ -1,0 +1,11 @@
+{
+    "name": "tagaroggu.github.io",
+    "repository": "https://github.com/tagaroggu/tagaroggu.github.io",
+    "dependencies": {
+        "vue": "3.2.31"
+    },
+    "devDependencies": {
+        "vite": "2.8.6",
+        "@vitejs/plugin-vue": "2.2.4"
+    }
+}

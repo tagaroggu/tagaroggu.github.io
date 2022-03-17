@@ -1,28 +1,19 @@
----
-layout: skeleton
-title: Tagaroggu
----
-<style>
-	#projects div div div a {
-		text-decoration: none;
-		color: black;
-	}
-	#projects div div div a#hover {
-		text-decoration: underline;
-	}
-</style>
-<section id="projects">
-	<h2 class="mdc-typography--headline4" style="padding-left: 16px">Projects:</h2>
-	<div class="mdc-layout-grid">
-		<div class="mdc-layout-grid__inner">
-			{% for project in site.data.projects %}
-				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-card mdc-card--outlined" style="padding: 16px">
-					<a href="{{ project.link }}">
-						<h1 class="mdc-typography--headline4">{{ project.name }}</h1>
-						<h2 class="mdc-typography--subtitle1">{{ project.desc }}</h2>
-					</a>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- OGP Tags -->
+
+
+	<title>Tagaroggu</title>
+	<script type="importmap">{ imports: {'vue': 'https://unpkg.com/vue@3.2.31/dist/vue.esm-browser.prod.js'} }</script>
+	<link rel="stylesheet" href="https://unpkg.com/bulma/css/bulma.min.css" />
+	<script type="module" src="src/index.js"></script>
+</head>
+<body>
+	
+</body>
+</html>
