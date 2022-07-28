@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tagaroggu</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			:root, #language-select {
+				color: white;
+				background-color: black;
+				font-family: monospace, monospace;
+				margin: 0;
+			}
+
+			footer {
+				position: absolute;
+				bottom: 0;
+			}
+
+			@media print, (prefers-color-scheme: light) {
+				:root, #language-select {
+					color: black;
+					background-color: white;
+				}
+			}
+
+			@media print {
+				a::after {
+					content: ' (' attr('href') ')'
+				}
+				.no-print {
+					display: none;
+				}
+			}
+		</style>
+		
+		<script type="module" crossorigin src="/assets/index.f2fab788.js"></script>
+	</head>
+	<body>
+		<label for="language-select" class="no-print">{{ lil[language] }}: </label><select name="language-select" id="language-select" class="no-print" v-model="language">
+			<option v-for="l in Object.keys(lil)" :key="l" :value="l" >{{ l }}</option>
+		</select><br class="no-print">
+		<div v-if="language === 'English'">
+			Hi, I'm Tagaroggu (or some other pseudonym).<br>
+			I try to make stuff with modern tech while also focusing on trying to keep some things traditional.
+		</div>
+		<div v-if="language === 'toki pona'">
+			toki! mi jan Junipa. mi ken jo e nasin sona.
+		</div>
+
+		<div v-if="language === 'Spanish'">
+			¡Hola! Me llamo Tagaroggu. Puedo hacer cosas en la internet. Estoy aprendiendo el español.
+		</div>
+		<div id="contacts"><br>
+			===================<br>
+			<a href="https://github.com/tagaroggu">GitHub</a> | 
+			<a href="https://twitter.com/tagaroggu">Twitter</a>
+		</div>
+		<footer>
+			Made with vi, vite, petite-vue
+		</footer>
+	</body>
+</html>
